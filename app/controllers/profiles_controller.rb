@@ -5,9 +5,9 @@ class ProfilesController < ApplicationController
   # GET /profiles.json
   def index
     @profiles = Profile.all
-    # response = HTTParty.get('https://api.github.com/users/JAshleyCW')
+    response = HTTParty.get("https://api.github.com/users/JAshleyCW")
 
-    #     @data = response
+        @data = response
   end
 
   # GET /profiles/1
